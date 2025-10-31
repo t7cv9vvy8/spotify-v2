@@ -20,7 +20,7 @@ function closeSidebar(){
 
 
 async function getSongs(){
-    let a = await fetch("http://127.0.0.1:5500/songs/");
+    let a = await fetch("https://t7cv9vvy8.github.io/spotify-v2/songs/");
     let response = await a.text();
     console.log(response);
     let div = document.createElement('div');
@@ -144,6 +144,7 @@ async function main(){
 
 }
     
+
 
 
 main();
