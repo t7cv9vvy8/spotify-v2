@@ -20,7 +20,7 @@ function closeSidebar(){
 
 
 async function getSongs(){
-    let a = await fetch("https://t7cv9vvy8.github.io/spotify-v2/songs/");
+    let a = await fetch("https://t7cv9vvy8.github.io/spotify-v2/songs/index.html");
     let response = await a.text();
     console.log(response);
     let div = document.createElement('div');
@@ -48,7 +48,7 @@ async function getSongs(){
 
 const playMusic = (track)=>{
     // let audio = new Audio("/songs/"+track);
-    currentSong.src = "/songs/"+track
+    currentSong.src = "https://t7cv9vvy8.github.io/songs/"+track
     currentSong.play();
     
 }
@@ -148,3 +148,4 @@ async function main(){
 
 
 main();
+
