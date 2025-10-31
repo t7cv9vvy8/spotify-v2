@@ -1,0 +1,16 @@
+.invert {
+    filter: invert(1);
+}
+
+.rounded{
+    border-radius: 0.5rem;
+}
+
+.m-1{
+    margin: 1rem 0.3rem;
+}
+
+
+.hide{
+    display: none;
+}
